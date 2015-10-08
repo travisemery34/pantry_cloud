@@ -9,4 +9,4 @@ Tapping the IntroScreen will take you to the login activity.
 
 ![](/git-assets/intro_activity.png)
 <br>
-
+![](/git-assets/login_activity.png)
