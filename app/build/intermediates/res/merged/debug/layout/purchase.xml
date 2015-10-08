@@ -1,0 +1,221 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent">
+
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/relLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="710dp"
+	    android:background="@drawable/darkbackground"
+	    android:baselineAligned="true"
+	    android:paddingTop="10dp" >
+	
+	    <LinearLayout
+	        android:id="@+id/linearLayout"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="700dp"
+	        android:layout_marginLeft="18dp"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/lightbackground" >
+	
+	        <RelativeLayout
+	            android:id="@+id/layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" >
+
+	            <TextView
+	                android:id="@+id/upc"
+	                android:layout_width="78dp"
+	                android:layout_height="20dp"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginTop="57dp"
+	                android:text="UPC"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#92a672" />
+
+	            <EditText
+	                android:id="@+id/editUPC"
+	                android:layout_width="180dp"
+	                android:layout_height="50dp"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignTop="@+id/upc" >
+	            </EditText>
+
+	            <EditText
+	                android:id="@+id/editText1"
+	                android:layout_width="180dp"
+	                android:layout_height="50dp"
+	                android:layout_alignLeft="@+id/editUPC"
+	                android:layout_alignParentRight="true"
+	                android:layout_below="@+id/editUPC" />
+
+	            <EditText
+	                android:id="@+id/quantity"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/editText1"
+	                android:layout_alignParentRight="true"
+	                android:layout_below="@+id/editText1" />
+
+	            <TextView
+	                android:id="@+id/textView4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBaseline="@+id/quantity"
+	                android:layout_alignBottom="@+id/quantity"
+	                android:layout_alignParentLeft="true"
+	                android:text="Quantity"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="#92a672" />
+
+	            <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBaseline="@+id/editText1"
+	                android:layout_alignBottom="@+id/editText1"
+	                android:layout_alignLeft="@+id/brand"
+	                android:text="Desc."
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="#92a672" />
+
+	            <Button
+	                android:id="@+id/getUPC"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBaseline="@+id/editUPC"
+	                android:layout_alignBottom="@+id/editUPC"
+	                android:layout_toLeftOf="@+id/editUPC"
+	                android:background="@drawable/barcode_icon" />
+
+	            <TextView
+	                android:id="@+id/textView3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_below="@+id/quantity"
+	                android:text="Category"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="#92a672" />
+
+	            <Spinner
+	                android:id="@+id/catList"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/quantity"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignTop="@+id/textView3"
+	                
+	                android:prompt="@string/category_list" />
+
+	            <TextView
+	                android:id="@+id/textView5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_below="@+id/catList"
+	                android:layout_marginTop="8dp"
+	                android:text="Brand"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="#92a672" />
+
+	            <EditText
+	                android:id="@+id/brandBox"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/catList"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignTop="@+id/textView5" />
+
+	            <TextView
+	                android:id="@+id/textView6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_below="@+id/brandBox"
+	                android:text="Price"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="#92a672" />
+
+	            <EditText
+	                android:id="@+id/priceBox"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/brandBox"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignTop="@+id/textView6" />
+
+	            <Button
+	                android:id="@+id/finishPurchase"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginBottom="20dp"
+	                android:background="@drawable/submit"
+	                android:text="Finish"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="#FFFFFF" />
+
+	            <TextView
+	                android:id="@+id/textView7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_below="@+id/priceBox"
+	                android:text="Expiration Date"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="#92a672" />
+
+	            <DatePicker
+	                android:id="@+id/expireDate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_below="@+id/textView7" />
+
+	            <Button
+	                android:id="@+id/add"
+	                android:layout_width="80dp"
+	                android:layout_height="50dp"
+	                android:layout_alignParentRight="true"
+	                android:layout_below="@+id/expireDate"
+	                android:layout_marginTop="22dp"
+	                android:background="@drawable/submit"
+	                android:text="Add"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="#FFFFFF" />
+
+	        </RelativeLayout>
+	        
+	    </LinearLayout>
+	
+	    
+	    <!-- Layout Configuration -->
+	    <ImageView
+	        android:id="@+id/header"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginRight="0dp"
+	        android:src="@drawable/banner" />
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/header"
+	        android:layout_marginTop="12dp"
+	        android:layout_marginRight="15dp"
+	        android:text="@string/purchaseView"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    <!-- Layout Configuration -->
+	
+	    
+	    
+	</RelativeLayout>
+</ScrollView>
+<!-- From: file:/Users/travisemery/StudioProjects/Virtual%20Pantry/app/src/main/res/layout/purchase.xml -->

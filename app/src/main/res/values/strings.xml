@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, This works!</string>
+    <string name="app_name">Pantry Cloud</string>
+	<string name="create_account">Join the Pantry</string>
+	<string name="full_name">Full Name</string>
+	<string name="username">Username</string>
+	
+	<string name="email">Email</string>
+	<string name="email_x">Retype Email</string>
+	<string name="password">Password</string>
+	<string name="password_x">Retype Password</string>
+	<string name="state">State</string>
+	<string name="city">City</string>
+	<string name="zipcode">Zipcode</string>
+	
+	<string name="button_create_account">Create Account</string>
+	
+	<!-- Main View String -->
+	<string name="mainView">Pantry</string>
+	<string name="loginButton">Login</string>
+	<string name="createButton">Create Account</string>
+	<string name="account">Need an account?</string>
+	<!-- Main View String -->	
+	
+	<!-- LaunchPad View String -->
+	<string name="view">LaunchPad</string>
+	<string name="submitButton">Scan!</string>
+	<!-- LaunchPad View String -->
+
+	<!-- Add Item View String -->
+	<string name="purchaseView">Add Item</string>
+	<string name="scanButton">Scan!</string>
+	<!-- Add Item View String -->	
+	
+    <string name="city_prompt">Select Your State</string>
+    <string-array name="city_array">
+        <item >Select State</item>
+        <item>AK</item>
+        <item>TX</item>
+        <item>AR</item>
+        <item>NC</item>
+        <item>SC</item>
+        <item>MI</item>
+        <item>MA</item>
+        <item>ID</item>
+    </string-array>
+    
+    <string name="store_list">Which Store</string>
+    <string-array name="storeArray">
+        <item >Select Store</item>
+    </string-array>
+    
+     <string name="category_list">Which Category</string>
+    <string-array name="category">
+        <item >Select Category</item>
+        <item >Meat</item>
+        <item >Dairy</item>
+        <item >Frozen</item>       
+    </string-array>
+    
+    
+    
+</resources>

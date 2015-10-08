@@ -1,0 +1,213 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/darkbackground"
+        android:baselineAligned="true"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/lightbackground" >
+
+            <ViewFlipper
+                android:id="@+id/profileSwitcher"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="500dp" >
+
+                    <TableLayout
+                        android:id="@+id/tableLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" >
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <Button
+                                android:id="@+id/newPurchase"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/new_purchase"
+                                android:text="New Entry"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#FFF" />
+
+                            <Button
+                                android:id="@+id/fridgeList"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/new_purchase"
+                                android:text="Pantry"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#FFF" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <Button
+                                android:id="@+id/submit"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/new_purchase"
+                                android:text="Submit Entry"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#FFF" />
+
+                            <Button
+                                android:id="@+id/recipeList"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/new_purchase"
+                                android:text="Recipe List"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#FFF" />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="Please choose an option above"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#92a672" />
+                </RelativeLayout>
+
+                <!-- Temporary screen for beginning new purchase -->
+
+                <RelativeLayout
+                    android:id="@+id/wrapper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:baselineAligned="true"
+                    android:paddingTop="0dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="26dp"
+                        android:text="Begin New Purchase"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#92a672" />
+
+                    <DatePicker
+                        android:id="@+id/purchaseDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="68dp" />
+
+                    <Spinner
+                        android:id="@+id/storeArray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/purchaseDate"
+                        android:layout_alignRight="@+id/purchaseDate"
+                        android:layout_below="@+id/purchaseDate"
+                        android:layout_marginTop="48dp"
+                        android:prompt="@string/store_list"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/next"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/storeArray"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="26dp"
+                        android:background="@drawable/submit"
+                        android:text="Start"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#FFF" />
+                </RelativeLayout>
+
+                <!-- Third View For Reviewing Purchases -->
+
+                <RelativeLayout
+                    android:id="@+id/reviewList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:baselineAligned="true"
+                    android:paddingTop="0dp" >
+
+                    <ScrollView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/scrollItems"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TableLayout
+                            android:id="@+id/purchaseList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+                        </TableLayout>
+                    </ScrollView>
+                </RelativeLayout>
+            </ViewFlipper>
+        </LinearLayout>
+        <!-- Layout Configuration -->
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/banner" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/header"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            android:text="Pending"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <!-- Layout Configuration -->
+
+    </RelativeLayout>
+
+</ScrollView>
+<!-- From: file:/Users/travisemery/StudioProjects/Virtual%20Pantry/app/src/main/res/layout/navigation.xml -->
