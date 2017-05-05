@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/travisemery/StudioProjects/Virtual%20Pantry/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string-array name="category">
         <item>Select Category</item>
         <item>Meat</item>

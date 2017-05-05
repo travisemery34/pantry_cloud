@@ -30,14 +30,14 @@
            
          </activity>
         
-<!--         <activity -->
-<!--             android:icon="@drawable/applaunch" -->
-<!--             android:name=".ViewNewUser" > -->
-<!--         </activity> -->
-<!--         <activity -->
-<!--             android:icon="@drawable/applaunch" -->
-<!--             android:name=".Pantry" > -->
-<!--         </activity> -->
+         <activity
+             android:icon="@drawable/applaunch"
+             android:name=".ViewNewUser" >
+         </activity>
+         <activity
+             android:icon="@drawable/applaunch"
+             android:name=".Pantry" >
+         </activity>
 <!--         <activity -->
 <!--             android:icon="@drawable/applaunch" -->
 <!--             android:name=".Purchase" > -->

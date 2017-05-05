@@ -155,4 +155,4 @@
         android:background="@drawable/submit"  />
 
 </LinearLayout>
-</ScrollView><!-- From: file:/Users/travisemery/StudioProjects/Virtual%20Pantry/app/src/main/res/layout/newaccount.xml -->
+</ScrollView>

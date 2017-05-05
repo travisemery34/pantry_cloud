@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar" >
         <activity
-            android:name="com.pantrycloud.activity.LoginActivity"
+            android:name="app.pantry.IntroScreen"
             android:icon="@drawable/applaunch" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,24 +26,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- <activity -->
-        <!-- android:icon="@drawable/applaunch" -->
-        <!-- android:name=".PantryProjectActivity" -->
-        <!-- android:label="@string/app_name" > -->
-
-
-        <!-- </activity> -->
-
-
-        <!-- <activity -->
-        <!-- android:icon="@drawable/applaunch" -->
-        <!-- android:name=".ViewNewUser" > -->
-        <!-- </activity> -->
-        <!-- <activity -->
-        <!-- android:icon="@drawable/applaunch" -->
-        <!-- android:name=".Pantry" > -->
-        <!-- </activity> -->
+        <activity
+            android:name="app.pantry.PantryProjectActivity"
+            android:icon="@drawable/applaunch"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="app.pantry.ViewNewUser"
+            android:icon="@drawable/applaunch" >
+        </activity>
+        <activity
+            android:name="app.pantry.Pantry"
+            android:icon="@drawable/applaunch" >
+        </activity>
         <!-- <activity -->
         <!-- android:icon="@drawable/applaunch" -->
         <!-- android:name=".Purchase" > -->
